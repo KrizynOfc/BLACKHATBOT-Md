@@ -1133,26 +1133,11 @@ const ultah = new Date('February 29, 2024 23:59:59')
     }
 
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-      await conn.send2ButtonVid(m.chat, `${gifs()}`, text, '                        「 *カ HAORI BOT あ⁩* 」', 'OWNER', '.owner', 'PING', '.ping', fkon, { contextInfo: { mentionedJid: conn.parseMention(text),
-        externalAdReply: {
-            title: `${ucapan()}`,
-            body: `${pickRandom(['Furry Indonesia :3', 'Suka Pokemon Nggak Kak :3', 'Kangen Haori Nggak?', 'Udah makan belum kak?', 'Udah Makan Belum?', 'Semangat ya kak!', 'Jangan begadang mulu ya!', 'Jangan spam ya kak!', 'Jangan lupa donasi yak kak! QωQ', 'Jaga kesehatan yaw kak!', 'Jangan lupa makan!', 'Jangan lupa istirahat yak! UωU', 'Haori Sayang Kamu :3', 'Pr nya udh belum kak?', 'Jangan kebanyakan main hp yk! nanti sakit :‹'])}`,
-            description: `Tetap Semangat Yah Kak :3`,
-            mediaType: 2,
-          thumbnail: await (await fetch('https://telegra.ph/file/72212de2826ec08f24b56.jpg')).buffer(),
-         mediaUrl: `https://www.facebook.com/Inunime-107082474576049/`
-        }
-     }
-    }) 
-
-  } catch (e) {
-
-    conn.reply(m.chat, 'Maaf, menu sedang error', m)
-
+      await conn.send3ButtonLoc(m.chat, await (await fetch(image)).buffer(), text.trim(), `Creator by ᴹᴿ𝙄𝙩𝙨𝙠𝙧𝙞 ×፝֟͜×\nRuntime : ${uptime}\nHari : ${week}, ${date}\nPowered by @s.whatsapp.net`, 'Group Bot', `${_p}allgc`, 'Sewa Bot', `${_p}sewabot`, 'Store', `${_p}store`, m)
+	  } catch (e) {
+    conn.reply(m.chat, 'Delay! Sabar Ngab...', m)
     throw e
-
   }
-
 }
 handler.help = ['menu']
 handler.tags = ['main']
