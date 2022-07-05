@@ -117,8 +117,6 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 
  
 
-	let bzz = './audio/ara-nabila.mp3'
-
 	let platform = os.platform()
 
 	let merk = conn.user.phone.device_manufacturer
