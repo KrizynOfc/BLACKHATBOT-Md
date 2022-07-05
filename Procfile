@@ -1,1 +1,1 @@
-worker: npm i pino && npm start
+worker: node . --server
