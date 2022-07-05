@@ -256,9 +256,9 @@ ${'```%npmdesc```'}
     throw e
   }
 }
-handler.help = ['menu']
+handler.help = ['menu2']
 handler.tags = ['main']
-handler.command = /^(menu)$/i
+handler.command = /^(menu2)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
