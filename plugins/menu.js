@@ -942,97 +942,6 @@ const ultah = new Date('February 29, 2024 23:59:59')
         { messageId: template.key.id }
     )
     }
-    /*const fload = {
-
-    key : {
-
-    remoteJid: 'status@broadcast',
-
-    participant : '0@s.whatsapp.net'
-
-    },
-
-    message: {
-
-    orderMessage: {
-
-    itemCount : 9999,
-
-    status: 1,
-
-    surface : 1,
-
-    message: '[ ! ] Memuat Menu ' + teks + '...\n ```[ ! ] Tunggu Sebentar```', 
-
-    orderTitle: `▮Menu ▸`,
-
-    thumbnail: await (await fetch(fla + 'Loading')).buffer(), //Gambarnye
-
-    sellerJid: '0@s.whatsapp.net' 
-
-    }
-
-    }
-
-    }
-
-    conn.reply(m.chat, '```[ ! ] wait...```', fload)*/
-
-    // gunakan ini jika kamu menggunakan whatsapp bisnis
-
-    //   throw `
-
-    // ┌〔 DAFTAR MENU 〕
-
-    // ├ ${_p + command} all
-
-    // ├ ${_p + command} game
-
-    // ├ ${_p + command} xp
-
-    // ├ ${_p + command} stiker
-
-    // ├ ${_p + command} kerang
-
-    // ├ ${_p + command} quotes
-
-    // ├ ${_p + command} admin
-
-    // ├ ${_p + command} group
-
-    // ├ ${_p + command} premium
-
-    // ├ ${_p + command} internet
-
-    // ├ ${_p + command} anonymous
-
-    // ├ ${_p + command} nulis
-
-    // ├ ${_p + command} downloader
-
-    // ├ ${_p + command} tools
-
-    // ├ ${_p + command} fun
-
-    // ├ ${_p + command} database
-
-    // ├ ${_p + command} vote
-
-    // ├ ${_p + command} quran
-
-    // ├ ${_p + command} audio
-
-    // ├ ${_p + command} jadibot
-
-    // ├ ${_p + command} info
-
-    // ├ ${_p + command} tanpa kategori
-
-    // ├ ${_p + command} owner
-
-    // └────  
-
-    //     `.trim()
 
     let groups = {}
 
@@ -1133,12 +1042,13 @@ const ultah = new Date('February 29, 2024 23:59:59')
     }
 
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-      await conn.send3ButtonLoc(m.chat, await (await fetch(image)).buffer(), text.trim(), `Creator by ᴹᴿ𝙄𝙩𝙨𝙠𝙧𝙞 ×፝֟͜×\nRuntime : ${uptime}\nHari : ${week}, ${date}\nPowered by @s.whatsapp.net`, 'Group Bot', `${_p}allgc`, 'Sewa Bot', `${_p}sewabot`, 'Store', `${_p}store`, m)
-	  } catch (e) {
-    conn.reply(m.chat, 'Delay! Sabar Ngab...', m)
+      await conn.send3TemplateButtonLoc(m.chat, text.trim(), wm, await(await require('node-fetch')(img)).buffer(), `🏅 O W N E R 🏅`, `${_p}owner`, `🎖T H A N K S T O 🎖`, `${_p}tqto`, `🚀  SPEED BOT  🚀`, `${_p}infobot`, m)
+    } catch (e) {
+    conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e
   }
 }
+	  
 handler.help = ['menu']
 handler.tags = ['main']
 handler.command = /^(menu|help|\?)$/i
@@ -1160,133 +1070,31 @@ const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
 
 function pickRandom(list) {
-
   return list[Math.floor(Math.random() * list.length)]
 
 }
 
-
-
-const more = String.fromCharCode(8206)
-
-const readMore = more.repeat(4001)
-
-
-
-function logos() {
-
-  const lgs = moment.tz('Asia/Jakarta').format('HH')
-
-  res = "Selamat dinihari"
-
-  if (lgs >= 4) {
-
-    imp = 'https://telegra.ph/file/abff7903bd674a8f9d307.jpg'
-
-  }
-
-  if (lgs > 10) {
-
-    imp = 'https://telegra.ph/file/ba940019735e224132f74.jpg'
-
-  }
-
-  if (lgs >= 15) {
-
-    imp = 'https://telegra.ph/file/a332bbac803e3c631bb07.jpg'
-
-  }
-
-  if (lgs >= 18) {
-
-    imp = 'https://telegra.ph/file/a5c91ab6c58c7be066654.jpg'
-
-  }
-
-  return imp
-
-}
-
-function gifs() {
-  const _gif = moment.tz('Asia/Jakarta').format('HH')
-  gif = "Selamat dinihari"
-  if (_gif >= 4) {
-    gif = 'https://telegra.ph/file/b7c6137acddd4d3ad549b.mp4'
-  }
-  if (_gif > 10) {
-    gif = 'https://telegra.ph/file/3c293c40dfbdb559d7317.mp4'
-  }
-  if (_gif >= 15) {
-    gif = 'https://telegra.ph/file/63918e5b529e0c76d30a2.mp4'
-  }
-  if (_gif >= 18) {
-    gif = 'https://telegra.ph/file/787adc4d7364b72da75a9.mp4'
-  }
-  return gif
-}
-
-function logopdf() {
-
-  const lgs = moment.tz('Asia/Jakarta').format('HH')
-
-  res = "Selamat dinihari"
-
-  if (lgs >= 4) {
-
-    imp = 'https://telegra.ph/file/7bd906ce2693a57e6c8f2.jpg'
-
-  }
-
-  if (lgs > 10) {
-
-    imp = 'https://telegra.ph/file/7bd906ce2693a57e6c8f2.jpg'
-
-  }
-
-  if (lgs >= 15) {
-
-    imp = 'https://telegra.ph/file/7bd906ce2693a57e6c8f2.jpg'
-
-  }
-
-  if (lgs >= 18) {
-
-    imp = 'https://telegra.ph/file/7bd906ce2693a57e6c8f2.jpg'
-
-  }
-
-  return imp
-
-}
-
-
-
 function clockString(ms) {
-
   let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
-
   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
-
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
-
   return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
-
 }
-
 function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
-  res = "Good Morning 🌆"
+  res = "jangan lupa mam yaah, lop yu<3"
   if (time >= 4) {
-    res = "Good Morning 🌄"
+    res = "Selamat Pagi ☀"
   }
   if (time > 10) {
-    res = "Good Afternoon ☀️"
+    res = "Selamat Siang 🌞"
   }
   if (time >= 15) {
-    res = "Good Evening 🌇"
+    res = "Selamat Sore 🌝"
   }
   if (time >= 18) {
-    res = "Good Night 🌃"
+    res = "Selamat Malam 🌚"
   }
   return res
-    }
+}
+
